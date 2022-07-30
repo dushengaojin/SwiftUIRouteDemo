@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07FD26CCD9E116C0BC1518D0E29BE9D4 /* Pods-SwiftUIRouteDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A44199BE5F77AA98AD1E5B244004DC /* Pods-SwiftUIRouteDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09873BA68720D4D80C5288F4A9F0C477 /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA63D96D4E03E62C952D719737429D8D /* RouteView.swift */; };
+		1DCF59B2516CA6AD2D73A93258B1DD23 /* RouterResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645F2A40A020E65BFE8469173DABC41 /* RouterResolver.swift */; };
+		2A50AE2DF38F79C4A83FA37CA8062460 /* RouteUri.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F012097219B2C085A36EE51580BF4 /* RouteUri.swift */; };
+		2DE940296E5BB079EEEB059FE47FED6E /* Pods-SwiftUIRouteDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 531BDAE455EAF9C97F5C6CEE81689506 /* Pods-SwiftUIRouteDemo-dummy.m */; };
+		430576EE7E7C6BB24A0F66A7DCFA7E04 /* DefaultErrorPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A22657EDA9FE1D90E622A4B6D29D36 /* DefaultErrorPage.swift */; };
+		63B16418F3471993665087F1FC9D67AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6F06071ECE69393A3F1FA36388E20946 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACDCDCE98BA7E3324B39DBCA8E5406C /* Route.swift */; };
+		96FDD5D2E68283A45AE79B97291EE72B /* Route+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD40F746819504FEFA9C9EE35F82D3F /* Route+Modifier.swift */; };
+		B8F3188BFED02381C4E0116F951B96A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D4D1B4084D95578E6033D9704EAC6A79 /* SwiftUIRoute-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A232721377F4B52357C7AD9F415868 /* SwiftUIRoute-dummy.m */; };
+		E9B240A480D803023B22014C2407EA3C /* SwiftUIRoute-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E09D6114B0A8099B08ECFC7BC7DDC3B9 /* SwiftUIRoute-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD4B46792334DC1B7E09B08308220716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 665FCE64281E6704244B3EE1C565321E;
+			remoteInfo = SwiftUIRoute;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04A33D9C686FF1D7FB65C8085AC0E9D8 /* Pods-SwiftUIRouteDemo */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SwiftUIRouteDemo"; path = Pods_SwiftUIRouteDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21A232721377F4B52357C7AD9F415868 /* SwiftUIRoute-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftUIRoute-dummy.m"; sourceTree = "<group>"; };
+		23E9803ACE51C38AA5281B75818F0DFE /* Pods-SwiftUIRouteDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUIRouteDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		30CCA5ADFB0C069B6F0ED46672B39B39 /* SwiftUIRoute.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftUIRoute.modulemap; sourceTree = "<group>"; };
+		30D66FCB4F3B02B8E6F5723FD4B59CE7 /* Pods-SwiftUIRouteDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftUIRouteDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36EE8E886F140A42E03429F32EFBC165 /* SwiftUIRoute-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftUIRoute-Info.plist"; sourceTree = "<group>"; };
+		3B8F07629AF5396109D89178AA5883F5 /* SwiftUIRoute */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftUIRoute; path = SwiftUIRoute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A22657EDA9FE1D90E622A4B6D29D36 /* DefaultErrorPage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultErrorPage.swift; sourceTree = "<group>"; };
+		4493F23097D07B67788E4F740282DAC9 /* Pods-SwiftUIRouteDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwiftUIRouteDemo.modulemap"; sourceTree = "<group>"; };
+		529F012097219B2C085A36EE51580BF4 /* RouteUri.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteUri.swift; sourceTree = "<group>"; };
+		531BDAE455EAF9C97F5C6CEE81689506 /* Pods-SwiftUIRouteDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftUIRouteDemo-dummy.m"; sourceTree = "<group>"; };
+		5645F2A40A020E65BFE8469173DABC41 /* RouterResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouterResolver.swift; sourceTree = "<group>"; };
+		5766348F0F4A6B7ED414D237F78AD076 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		57722B98D38DBCF8FA252095D674CD4A /* Pods-SwiftUIRouteDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftUIRouteDemo-frameworks.sh"; sourceTree = "<group>"; };
+		5C93F9DD5812720940E857F48EF3B616 /* SwiftUIRoute.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUIRoute.debug.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8ACDCDCE98BA7E3324B39DBCA8E5406C /* Route.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A931CAC2528C99E285A60EA6B94AF19C /* SwiftUIRoute.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwiftUIRoute.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B74F384FB2ABD22D6031AAC11691965F /* Pods-SwiftUIRouteDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUIRouteDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B8A44199BE5F77AA98AD1E5B244004DC /* Pods-SwiftUIRouteDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftUIRouteDemo-umbrella.h"; sourceTree = "<group>"; };
+		BA63D96D4E03E62C952D719737429D8D /* RouteView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RouteView.swift; sourceTree = "<group>"; };
+		BA850A8B80BF2ADE91A76F60A644BE15 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CDEC1646D05FC8ABD808EC938DCB9654 /* Pods-SwiftUIRouteDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftUIRouteDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E09D6114B0A8099B08ECFC7BC7DDC3B9 /* SwiftUIRoute-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftUIRoute-umbrella.h"; sourceTree = "<group>"; };
+		EE7DAB71E90077D1FDF898F30067C966 /* SwiftUIRoute.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftUIRoute.release.xcconfig; sourceTree = "<group>"; };
+		F00431DCE1BA5341610578C45435C735 /* Pods-SwiftUIRouteDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftUIRouteDemo-Info.plist"; sourceTree = "<group>"; };
+		FCD40F746819504FEFA9C9EE35F82D3F /* Route+Modifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Route+Modifier.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66FDD96964918CD38BB645224ACE1AC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8F3188BFED02381C4E0116F951B96A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A363DD9F99E6F03C2FCFE8B2811396B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B16418F3471993665087F1FC9D67AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F3F8C1218440694ACF481E03FAD3636 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				8ACDCDCE98BA7E3324B39DBCA8E5406C /* Route.swift */,
+				5645F2A40A020E65BFE8469173DABC41 /* RouterResolver.swift */,
+				529F012097219B2C085A36EE51580BF4 /* RouteUri.swift */,
+			);
+			name = Route;
+			path = Source/Route;
+			sourceTree = "<group>";
+		};
+		220BAE2C5880F1C7F85A25219C372D12 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D3B2D23F175F1EDABF2EF9F104C2DD5 /* Pods-SwiftUIRouteDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		30571ED527753638297B3084CE3FD5F7 /* SwiftUIRoute */ = {
+			isa = PBXGroup;
+			children = (
+				B5977B19CBF2DFD930E1F410C5E346D0 /* Pod */,
+				0F3F8C1218440694ACF481E03FAD3636 /* Route */,
+				81AA282E4FDB0F8C556683AD870B9CD4 /* Support Files */,
+				4F1F95336E6FCA3ACD1446DF90B9F7BC /* UIComponents */,
+			);
+			name = SwiftUIRoute;
+			path = "../../SwiftUI-Route";
+			sourceTree = "<group>";
+		};
+		4F1F95336E6FCA3ACD1446DF90B9F7BC /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				40A22657EDA9FE1D90E622A4B6D29D36 /* DefaultErrorPage.swift */,
+				FCD40F746819504FEFA9C9EE35F82D3F /* Route+Modifier.swift */,
+				BA63D96D4E03E62C952D719737429D8D /* RouteView.swift */,
+			);
+			name = UIComponents;
+			path = Source/UIComponents;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7D3B2D23F175F1EDABF2EF9F104C2DD5 /* Pods-SwiftUIRouteDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4493F23097D07B67788E4F740282DAC9 /* Pods-SwiftUIRouteDemo.modulemap */,
+				30D66FCB4F3B02B8E6F5723FD4B59CE7 /* Pods-SwiftUIRouteDemo-acknowledgements.markdown */,
+				23E9803ACE51C38AA5281B75818F0DFE /* Pods-SwiftUIRouteDemo-acknowledgements.plist */,
+				531BDAE455EAF9C97F5C6CEE81689506 /* Pods-SwiftUIRouteDemo-dummy.m */,
+				57722B98D38DBCF8FA252095D674CD4A /* Pods-SwiftUIRouteDemo-frameworks.sh */,
+				F00431DCE1BA5341610578C45435C735 /* Pods-SwiftUIRouteDemo-Info.plist */,
+				B8A44199BE5F77AA98AD1E5B244004DC /* Pods-SwiftUIRouteDemo-umbrella.h */,
+				B74F384FB2ABD22D6031AAC11691965F /* Pods-SwiftUIRouteDemo.debug.xcconfig */,
+				CDEC1646D05FC8ABD808EC938DCB9654 /* Pods-SwiftUIRouteDemo.release.xcconfig */,
+			);
+			name = "Pods-SwiftUIRouteDemo";
+			path = "Target Support Files/Pods-SwiftUIRouteDemo";
+			sourceTree = "<group>";
+		};
+		81AA282E4FDB0F8C556683AD870B9CD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30CCA5ADFB0C069B6F0ED46672B39B39 /* SwiftUIRoute.modulemap */,
+				21A232721377F4B52357C7AD9F415868 /* SwiftUIRoute-dummy.m */,
+				36EE8E886F140A42E03429F32EFBC165 /* SwiftUIRoute-Info.plist */,
+				E09D6114B0A8099B08ECFC7BC7DDC3B9 /* SwiftUIRoute-umbrella.h */,
+				5C93F9DD5812720940E857F48EF3B616 /* SwiftUIRoute.debug.xcconfig */,
+				EE7DAB71E90077D1FDF898F30067C966 /* SwiftUIRoute.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../SwiftUIRouteDemo/Pods/Target Support Files/SwiftUIRoute";
+			sourceTree = "<group>";
+		};
+		9BD3F8643561CD5D53ADFACFCA203F50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04A33D9C686FF1D7FB65C8085AC0E9D8 /* Pods-SwiftUIRouteDemo */,
+				3B8F07629AF5396109D89178AA5883F5 /* SwiftUIRoute */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A93938B7562E90603C3FBA234728BEE7 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30571ED527753638297B3084CE3FD5F7 /* SwiftUIRoute */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B5977B19CBF2DFD930E1F410C5E346D0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BA850A8B80BF2ADE91A76F60A644BE15 /* LICENSE */,
+				5766348F0F4A6B7ED414D237F78AD076 /* README.md */,
+				A931CAC2528C99E285A60EA6B94AF19C /* SwiftUIRoute.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A93938B7562E90603C3FBA234728BEE7 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9BD3F8643561CD5D53ADFACFCA203F50 /* Products */,
+				220BAE2C5880F1C7F85A25219C372D12 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		76177763FD667E5995B76AB10487A33D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B240A480D803023B22014C2407EA3C /* SwiftUIRoute-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9CCDF09F9B87BDD7EF7BBE4E9ABBE3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FD26CCD9E116C0BC1518D0E29BE9D4 /* Pods-SwiftUIRouteDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		665FCE64281E6704244B3EE1C565321E /* SwiftUIRoute */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9BB9886A08DD6E4F5D31D9726F8C574 /* Build configuration list for PBXNativeTarget "SwiftUIRoute" */;
+			buildPhases = (
+				76177763FD667E5995B76AB10487A33D /* Headers */,
+				3D53E02639906F85BBD3632B18ABD9E2 /* Sources */,
+				66FDD96964918CD38BB645224ACE1AC8 /* Frameworks */,
+				49E09D16D602D0FB6F3B9D3C7467AC48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIRoute;
+			productName = SwiftUIRoute;
+			productReference = 3B8F07629AF5396109D89178AA5883F5 /* SwiftUIRoute */;
+			productType = "com.apple.product-type.framework";
+		};
+		D0E1CB9FDB0DA09DB1CCC2C05A07C384 /* Pods-SwiftUIRouteDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 316A736079138AE4B9CE87B9F76ECA95 /* Build configuration list for PBXNativeTarget "Pods-SwiftUIRouteDemo" */;
+			buildPhases = (
+				F9CCDF09F9B87BDD7EF7BBE4E9ABBE3F /* Headers */,
+				CDDBF197238E41D00DC1B4960CA54516 /* Sources */,
+				A363DD9F99E6F03C2FCFE8B2811396B7 /* Frameworks */,
+				4334BD960D39AE6220715A9E80ACE815 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E402CA1C5F1ADEDA495277BA8660784 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftUIRouteDemo";
+			productName = Pods_SwiftUIRouteDemo;
+			productReference = 04A33D9C686FF1D7FB65C8085AC0E9D8 /* Pods-SwiftUIRouteDemo */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9BD3F8643561CD5D53ADFACFCA203F50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0E1CB9FDB0DA09DB1CCC2C05A07C384 /* Pods-SwiftUIRouteDemo */,
+				665FCE64281E6704244B3EE1C565321E /* SwiftUIRoute */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4334BD960D39AE6220715A9E80ACE815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E09D16D602D0FB6F3B9D3C7467AC48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D53E02639906F85BBD3632B18ABD9E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430576EE7E7C6BB24A0F66A7DCFA7E04 /* DefaultErrorPage.swift in Sources */,
+				6F06071ECE69393A3F1FA36388E20946 /* Route.swift in Sources */,
+				96FDD5D2E68283A45AE79B97291EE72B /* Route+Modifier.swift in Sources */,
+				1DCF59B2516CA6AD2D73A93258B1DD23 /* RouterResolver.swift in Sources */,
+				2A50AE2DF38F79C4A83FA37CA8062460 /* RouteUri.swift in Sources */,
+				09873BA68720D4D80C5288F4A9F0C477 /* RouteView.swift in Sources */,
+				D4D1B4084D95578E6033D9704EAC6A79 /* SwiftUIRoute-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDBF197238E41D00DC1B4960CA54516 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE940296E5BB079EEEB059FE47FED6E /* Pods-SwiftUIRouteDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E402CA1C5F1ADEDA495277BA8660784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftUIRoute;
+			target = 665FCE64281E6704244B3EE1C565321E /* SwiftUIRoute */;
+			targetProxy = BD4B46792334DC1B7E09B08308220716 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6A741712A517B3D4560C051AAFB96E89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDEC1646D05FC8ABD808EC938DCB9654 /* Pods-SwiftUIRouteDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUIRouteDemo/Pods-SwiftUIRouteDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUIRouteDemo/Pods-SwiftUIRouteDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74222BAB9FD2DE0CC965E2972330D92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B74F384FB2ABD22D6031AAC11691965F /* Pods-SwiftUIRouteDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftUIRouteDemo/Pods-SwiftUIRouteDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftUIRouteDemo/Pods-SwiftUIRouteDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76DA96662F33BF7ED1994BF7DA4759E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE7DAB71E90077D1FDF898F30067C966 /* SwiftUIRoute.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/SwiftUIRoute/SwiftUIRoute-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftUIRoute/SwiftUIRoute.modulemap";
+				PRODUCT_MODULE_NAME = SwiftUIRoute;
+				PRODUCT_NAME = SwiftUIRoute;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F6F9DE4FC60D9BA7AF9507D76A3EA279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C93F9DD5812720940E857F48EF3B616 /* SwiftUIRoute.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/SwiftUIRoute/SwiftUIRoute-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftUIRoute/SwiftUIRoute.modulemap";
+				PRODUCT_MODULE_NAME = SwiftUIRoute;
+				PRODUCT_NAME = SwiftUIRoute;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		316A736079138AE4B9CE87B9F76ECA95 /* Build configuration list for PBXNativeTarget "Pods-SwiftUIRouteDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74222BAB9FD2DE0CC965E2972330D92B /* Debug */,
+				6A741712A517B3D4560C051AAFB96E89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9BB9886A08DD6E4F5D31D9726F8C574 /* Build configuration list for PBXNativeTarget "SwiftUIRoute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6F9DE4FC60D9BA7AF9507D76A3EA279 /* Debug */,
+				76DA96662F33BF7ED1994BF7DA4759E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

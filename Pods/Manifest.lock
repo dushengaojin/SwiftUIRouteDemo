@@ -1,0 +1,16 @@
+PODS:
+  - SwiftUIRoute (0.0.1)
+
+DEPENDENCIES:
+  - SwiftUIRoute (from `../SwiftUI-Route/`)
+
+EXTERNAL SOURCES:
+  SwiftUIRoute:
+    :path: "../SwiftUI-Route/"
+
+SPEC CHECKSUMS:
+  SwiftUIRoute: a7f798b83cefcee26c2e8ae96ecf8a370294827b
+
+PODFILE CHECKSUM: 518a41b1ff60bdab4ddbed3edf5058c68443ada1
+
+COCOAPODS: 1.11.2
