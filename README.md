@@ -1,3 +1,3 @@
 # SwiftUIRouteDemo
 
-![Demo](./demo.mov#pic_center=300x)
+<img src="./demo.mov" width="300">
